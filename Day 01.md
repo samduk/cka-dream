@@ -1,6 +1,6 @@
 ### Target 2020 
 - Linux System Administrator (Certification Exam) 
-- CKA certification 
+- [CKA](https://www.cncf.io/certification/cka/) certification 
 
 ### Self study 
 
