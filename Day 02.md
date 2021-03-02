@@ -23,4 +23,5 @@
 
 - When the content of several file systems, called branches, are virtually stacked, their contents appear to be merged, however, physically, they remain separate. The real physical separation, together with read-only and read-write access modes, help to prevent data corruption with the implementation of a Copy-on_write (CoW) mechanism. This mechanism creates a phyiscal copy of an existing file when it is being accessed to be changed. A copy of the file is made onto a real writable file system, part of the unionfs, and that copy is in fact being modified. However, virtually through the unified file system, it appears as if the original file has been modified instead. 
 
+	- <img src="https://github.com/samduk/cka-dream/blob/master/images/unionfs.png" width="300" height="600">
 
