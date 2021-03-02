@@ -2,5 +2,5 @@
 - feature of the Linux kernel 
 	- allowing the limitation, accounting, and isolation of resources used by groups of processes and their subgroups.- Cgroups are a fundamental feature of various Operating System level virtualization mechanisms, such as OpenVZ and LXC. 
 
-- ![cgroup](https://github.com/samduk/cka-dream/blob/master/images/cgroup.png =100x20)
-<img src="https://github.com/samduk/cka-dream/blob/master/images/cgroup.png" width="100" height="100">
+#- ![cgroup](https://github.com/samduk/cka-dream/blob/master/images/cgroup.png =100x20)
+<center><img src="https://github.com/samduk/cka-dream/blob/master/images/cgroup.png" width="500" height="800"> </center>
