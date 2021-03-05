@@ -1,0 +1,30 @@
+## Container Image Standards - App Container (appc)
+
+- One of the container runtimes implementing the appc specification is rkt. 
+- The appc specification defines a container image format, how an application is packaged into a container image, a deployment mechanism and a runtime.
+
+- In addition to defining the Application Container Image (ACI) format for container images, the appc enables the user community to develop tools to build, validate, and convert container images to ACI image format, such as goaci, docker2aci, deb2aci, actool, acbuild, and oci2aci. 
+
+- The appc [specification](https://github.com/appc/spec/blob/master/SPEC.md) intends to speed up the design and the deployment of a container while ensuring container image integrity through cryptographic signatures. 
+
+### Aspect of the Application Container
+#### App Container Image
+- The [App Container Image](https://github.com/appc/spec/blob/master/spec/aci.md)(ACI) defines the packaging, compression and extraction methods of files that make up the container image's integrity. Individual files are packaged together into ACI archives that ensure not only fast and easy build, but also safe storage when downloaded and extracted to be saved on a system.
+- The ACI describes the following aspects of a container image:
+	- File system layout of the container image with its direcctory tree. 
+	- Format of the container image archive, together with compression and encryption options, 
+	- Uniq image ID that allows its integrity verification
+
+
+
+
+
+
+
+
+
+
+
+
+
+

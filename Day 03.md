@@ -58,6 +58,7 @@ While only a root user may perform a chroot, it is not a defence mechanism again
 - Systemd-nspawn may be used to run a simple script or boot an entire Linux-like operating system in a container. 
 - Systemd-nspawn full isolated containers from each other and from the host system, therefore processes running in a container are not able to communicate with processes from other containers. It fully virtualizes the process tree, filesystem, users, host and domain name. 
 - Containers created by systemd-nspawn may run as system services, and may be managed with systemd - the default service manager that bootstraps the user space and manages user processes on many Linux distributions. 
+
  
 
 
