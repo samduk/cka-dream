@@ -54,13 +54,13 @@ kubadm:
 	- 3 servers - ubuntu 18.04 
 
 Hostname: k8s-control 
-- cat << EOF | sudo tee /etc/modules-load.d/containerd.conf 
+```cat << EOF | sudo tee /etc/modules-load.d/containerd.conf 
 overlay
 br_netfilter 
 EOF
-
+```
 #### to load without reboot
-sudo modprobe overlay 
+```sudo modprobe overlay 
 sudo modprobe br_netfilter 
 
 cat << EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf 
@@ -104,28 +104,28 @@ sudo kubeadm init --pod-network-cidr 192.168.0.0/16
 	mkdir -p $HOME/.kube 
 	sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 
 	sudo chown $(id -u):$(id -g) $HOME/.kube/config 
-
-kubectl version 
-
+```
+```kubectl version 
+```
 To setup K8s network 
 
-kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
-
+```kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
+```
 To verify 
 
-kubectl get pods -n kube-system 
-
+```kubectl get pods -n kube-system 
+```
 Worker node to join the cluster 
 
-kubeadm token create --print-join-command 
-
+```kubeadm token create --print-join-command 
+```
 	the output is the token that should run on the worker node to join the network cluster 
 	sudo and token node 
 
 on control
 
-kubectl get nodes 
-
+```kubectl get nodes 
+```
 ## Chapter 3 
 
 
